@@ -4,15 +4,19 @@
 require 'google/protobuf'
 
 Google::Protobuf::DescriptorPool.generated_pool.build do
-  add_message "snip.SnipRequest" do
+  add_message 'snip.SnipRequest' do
     optional :url, :string, 1
   end
-  add_message "snip.SnipResponse" do
+  add_message 'snip.SnipResponse' do
     optional :url, :string, 1
   end
 end
 
 module Snip
-  SnipRequest = Google::Protobuf::DescriptorPool.generated_pool.lookup("snip.SnipRequest").msgclass
-  SnipResponse = Google::Protobuf::DescriptorPool.generated_pool.lookup("snip.SnipResponse").msgclass
+  SnipRequest = Google::Protobuf::DescriptorPool.generated_pool
+                                                .lookup('snip.SnipRequest')
+                                                .msgclass
+  SnipResponse = Google::Protobuf::DescriptorPool.generated_pool
+                                                 .lookup('snip.SnipResponse')
+                                                 .msgclass
 end
