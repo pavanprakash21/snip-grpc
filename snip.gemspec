@@ -10,13 +10,13 @@ Gem::Specification.new do |spec|
   spec.authors       = ['p150']
   spec.email         = ['pavanprakash21@gmail.com']
 
-  spec.summary       = 'TODO: Write a short summary, required.'
-  spec.description   = 'TODO: Write a longer description or delete this line.'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'Write a short summary, required.'
+  spec.description   = 'Write a longer description or delete this line.'
+  spec.homepage      = "Put your gem's website or public repo URL here."
   spec.license       = 'MIT'
 
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "Set to 'http://mygemserver.com'"
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
       'public gem pushes.'
