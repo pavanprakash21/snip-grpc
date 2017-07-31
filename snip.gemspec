@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Write a short summary, required.'
   spec.description   = 'Write a longer description or delete this line.'
-  spec.homepage      = "Put your gem's website or public repo URL here."
+  spec.homepage      = 'https://github.com/draconiandev/snip-grpc'
   spec.license       = 'MIT'
 
   if spec.respond_to?(:metadata)
